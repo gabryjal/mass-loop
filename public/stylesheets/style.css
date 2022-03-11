@@ -1,9 +1,23 @@
 .header {
   display: flex;
+  margin-top: 59px;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
   margin: 0 20px;
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
 }
 
 .active {
@@ -12,4 +26,41 @@ body {
 
 .hide {
   display: none;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: bold;
+}
+.product__narrow-text {
+  text-align: center;
+  margin-top: 31px;
+}
+
+.product__image {
+  position: relative;
+  height: 91vw;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+  margin-top: 60px;
+}
+
+.shopping-bag {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+.shopping-bag:after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
 }

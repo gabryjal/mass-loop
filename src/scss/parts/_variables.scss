@@ -2,3 +2,14 @@ $clr-1: #FFFFFF;
 $clr-2: #FAFAFD;
 $clr-3: #FFB001;
 $clr-4: #212121;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: bold;
+}

@@ -1,3 +1,7 @@
+* {
+  outline: none !important;
+}
+
 html {
   font-size: 10px;
 }
@@ -5,17 +9,37 @@ html {
 body {
   margin: 0 20px;
   font-family: Montserrat;
-}
 
-h1 {
-  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.5rem;
+  color: $clr-5;
 }
 
+h3 {
+  font-size: 2.4rem;
+  color: $clr-5;
+  margin: 0;
+}
 
+h4 {
+  font-size: 1.6rem;
+  color: $clr-5;
+}
+
+p,
+ul,
+li {
+  font-size: 1.6rem;
+  color: $clr-5;
+}
+
+.edge-margin {
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
 
 .active {
   display: block;
@@ -24,3 +48,5 @@ h2 {
 .hide {
   display: none;
 }
+
+

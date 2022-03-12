@@ -1,6 +1,14 @@
-.header {
-  display: flex;
-  margin-top: 59px;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: bold;
+}
+* {
+  outline: none !important;
 }
 
 html {
@@ -12,12 +20,32 @@ body {
   font-family: Montserrat;
 }
 
-h1 {
+h2 {
   font-size: 3.5rem;
+  color: #212121;
 }
 
-h2 {
+h3 {
   font-size: 2.4rem;
+  color: #212121;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+  color: #212121;
+}
+
+p,
+ul,
+li {
+  font-size: 1.6rem;
+  color: #212121;
+}
+
+.edge-margin {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .active {
@@ -28,39 +56,158 @@ h2 {
   display: none;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 59px;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Black.ttf") format("truetype");
-  font-weight: bold;
+
+.header__right-side {
+  display: flex;
 }
-.product__narrow-text {
+
+.product__title {
   text-align: center;
   margin-top: 31px;
 }
 
-.product__image {
+.product__image-wrapper {
   position: relative;
-  height: 91vw;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 140%;
-  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  height: 92.5vw;
+  margin-top: 57px;
+  margin-bottom: 15px;
+  max-height: 605px;
 }
 
-.shopping-bag {
-  position: absolute;
-  bottom: 10%;
-  right: 8%;
+.product__image {
+  width: 142%;
 }
-.shopping-bag:after {
-  content: "";
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
+
+.product__shopping-bag {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFB001;
+  box-shadow: 0 20px 59px -10px rgba(0, 0, 0, 0.15);
+  border-radius: 80px;
+  bottom: 7%;
+  right: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.product__description {
+  background-color: #FFB001;
+  text-align: center;
+  border-radius: 10px;
+  padding: 52px 20px 58px 20px;
+  width: calc(100vw - 40px);
+  margin-left: -20px;
+}
+
+.product__description-content {
+  line-height: 25px;
+  margin-top: 25px;
+}
+
+.calculator {
+  margin: 63px 0;
+  text-align: center;
+}
+
+.calculator__description {
+  margin-bottom: 44px;
+}
+
+.calculator__content {
+  margin-top: 30px;
+}
+
+.calculator__value {
+  display: inline-block;
+  background-color: #FAFAFD;
+  border-radius: 10px;
+}
+
+.calculator__value--first {
+  margin: 20px 0;
+}
+
+.calculator__value-title {
+  margin: 40px 20px 50px 20px;
+}
+
+.calculator__value-input {
+  width: 225px;
+  height: 70px;
+  border: 1px solid #212121;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 38px;
+}
+
+.calculator__result {
+  display: inline-block;
+  background: #212121;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.calculator__result-description-first {
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+
+.calculator__result-description-second {
+  color: #FFFFFF;
+  margin: 25px 0 40px 0;
+}
+
+.calculator__result-price {
+  color: #909090;
+  font-size: 2.8rem;
+  margin-top: 25px;
+}
+
+.calculator__content-summary {
+  line-height: 25px;
+  margin: 60px 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  background-color: #FFB001;
+  border-radius: 47.5px;
+  box-shadow: 0 34px 64px -10px rgba(0, 0, 0, 0.15);
+  height: 80px;
+  width: 320px;
+}
+
+.button__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 2.4rem;
+  color: #212121;
+}
+
+.button__text--uppercase--bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer {
+  width: 293px;
+  text-align: center;
+  margin: 0 auto 103px;
 }

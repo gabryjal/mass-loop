@@ -8,71 +8,71 @@
 </head>
 <body>
 <header class="header">
-  <a href="./" class="header__logo left-side">
-    <img src="images/logo.svg">
+  <a href="./" class="header__left-side">
+    <img class="header__left-side-logo" src="images/logo.svg" alt="logo">
   </a>
-  <div class="header__lang-switcher">
-    <ul>
-      <li class="active">PL</li>
-      <li class="hide">EN</li>
-    </ul>
-  </div>
-  <div class="burger-menu">
-    <img src="images/menu-icon.svg">
-    <!--      <ul>-->
-    <!--        <li>Policz zyski</li>-->
-    <!--        <li>O produkcie</li>-->
-    <!--        <li>Kontakt</li>-->
-    <!--        <li>FAQ</li>-->
-    <!--        <li>-->
-    <!--          <button class="button">KUP</button>-->
-    <!--        </li>-->
-    <!--      </ul>-->
+  <div class="header__right-side">
+    <div class="header__lang-switcher">
+      <ul>
+        <li class="active">PL</li>
+        <li class="hide">EN</li>
+      </ul>
+    </div>
+    <div class="header__burger-menu">
+      <img src="images/menu-icon.svg" alt="menu icon">
+      <!--      <ul>-->
+      <!--        <li>Policz zyski</li>-->
+      <!--        <li>O produkcie</li>-->
+      <!--        <li>Kontakt</li>-->
+      <!--        <li>FAQ</li>-->
+      <!--        <li>-->
+      <!--          <button class="button">KUP</button>-->
+      <!--        </li>-->
+      <!--      </ul>-->
+    </div>
   </div>
 </header>
 <section class="product">
-  <div class="product__narrow-text">
-    <h1>Inteligentna kruszarka, która zamienia szkło w piasek.</h1>
-  </div>
-  <div style="background-image: url('images/product-image.png');" class="product__image">
-<!--    <img class="product__image__img" src="images/product-image.png">-->
-    <a class="shopping-bag" href="./">
-      <img src="images/shopping-bag.svg">
+  <h2 class="product__title">Inteligentna kruszarka, która zamienia szkło w piasek.</h2>
+  <div class="product__image-wrapper">
+    <img class="product__image" src="images/product-image.png" alt="kruszarka">
+    <a class="product__shopping-bag" href="./">
+      <img src="images/shopping-bag.svg" alt="shopping bag">
     </a>
   </div>
-  <div class="product__content">
-    <h2>Płać 5 razy mniej za wywóz odpadów szklanych.</h2>
-    <p>Kruszarka zmniejsza gabaryty szklanych śmieci, a Ty
+  <div class="product__description">
+    <h3>Płać 5 razy mniej za wywóz odpadów szklanych.</h3>
+    <p class="product__description-content">Kruszarka zmniejsza gabaryty szklanych śmieci, a Ty
       płacisz PIĘ-CIO-KROT-NIE niższe rachunki za ich wywóz.</p>
   </div>
 </section>
 <section class="calculator">
-  <div class="calculator__narrow-text">
-    <h2>Ile zaoszczędzisz?</h2>
-    <p>Rachunek jest prosty.</p>
+  <div class="calculator__description">
+    <h3 class="calculator__title">Ile zaoszczędzisz?</h3>
+    <p class="calculator__content">Rachunek jest prosty.</p>
   </div>
-  <div class="calculator__first-input">
-    <p>Ile pojemników na szkło zapełniasz miesięcznie?</p>
-    <input>
+  <div class="calculator__value calculator__value--first">
+    <h4 class="calculator__value-title">Ile pojemników na szkło zapełniasz miesięcznie?</h4>
+    <input class="calculator__value-input" type="number" placeholder="20">
   </div>
-  <div class="calculator__second-input">
-    <p>Ile płacisz za wywóz jednego pojemnika na szkło?</p>
-    <input>
+  <div class="calculator__value calculator__value--second">
+    <h4 class="calculator__value-title">Ile płacisz za wywóz jednego pojemnika na szkło?</h4>
+    <input class="calculator__value-input" type="number" placeholder="20">
   </div>
   <div class="calculator__result">
-    <p>Dzięki kruszarce zaoszczędzisz</p>
-    <h2>900 zł</h2>
-    <p>rocznie.</p>
+    <h4 class="calculator__result-description-first">Dzięki kruszarce zaoszczędzisz</h4>
+    <h3 class="calculator__result-price">900 zł</h3>
+    <h4 class="calculator__result-description-second">rocznie.</h4>
   </div>
-  <div class="calculator__content-summary">
-    <p>To na co wydasz zaoszczędzoną gotówkę?</p>
-  </div>
+  <p class="calculator__content-summary">To na co wydasz zaoszczędzoną gotówkę?</p>
 </section>
-<div class="button buy-button">
-  <h2><span class="bold uppercase">kup</span> 8499 zł</h2>
+<div class="button">
+  <a class="button__link" href="./">
+    <span class="button__text--uppercase--bold">kup</span> 8499 zł
+  </a>
 </div>
-<footer>
-  <h2>Brzmi dobrze?  Uważaj. Dopiero się rozkręcamy!</h2>
+<footer class="footer">
+  <h3>Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</h3>
 </footer>
 </body>
 </html>

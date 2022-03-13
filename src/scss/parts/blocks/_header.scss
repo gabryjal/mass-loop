@@ -1,10 +1,109 @@
 .header {
+  height: 90px;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 59px;
+  margin: 56px auto auto;
+  max-width: 1220px;
+  @media screen and (min-width: $scr-des) {
+    display: grid;
+    grid-template-columns: 2fr auto 1fr 1fr;
+    margin: 46px auto auto;
+    width: 100%;
+    height: 90px;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
 }
 
-.header__right-side {
-  display: flex;
+.header__wrapper {
+  @media screen and (min-width: $scr-des) {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: red;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+
+.header__logo-img {
+  @media screen and (min-width: $scr-des) {
+    width: 120px;
+  }
+}
+
+.header__lang-switcher {
+  font-size: 1.6rem;
+  margin-right: 47px;
+  position: relative;
+  flex-grow: 1;
+  text-align: end;
+
+  &:after {
+    content: "";
+    width: 9px;
+    height: 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(../images/chevron.svg);
+    position: absolute;
+    right: -18px;
+    top: 22px;
+  }
+
+  @media screen and (min-width: $scr-des) {
+    margin-right: 20px;
+  }
+}
+
+.header__menu {
+  font-size: 1.6rem;
+  @media screen and (min-width: $scr-des) {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+}
+
+.header__menu-burger {
+  display: block;
+  @media screen and (min-width: $scr-des) {
+    display: none;
+  }
+}
+
+.header__menu-items {
+  display: none;
+  @media screen and (min-width: $scr-des) {
+    display: flex;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.header__menu-item {
+  margin-right: 47px;
+  text-decoration: none;
+}
+
+.header__menu-item-link {
+  text-decoration: none;
+  color: $clr-5;
+}
+
+.header__menu-item--last-desktop {
+  margin-right: 0;
+}
+
+.header__menu-items--mobile {
+  display: block;
+  @media screen and (min-width: $scr-des) {
+    display: none;
+  }
 }

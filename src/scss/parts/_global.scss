@@ -15,24 +15,34 @@ body {
 h2 {
   font-size: 3.5rem;
   color: $clr-5;
+  @media screen and (min-width: $scr-des) {
+    font-size: 5.5rem;
+  }
 }
 
 h3 {
   font-size: 2.4rem;
   color: $clr-5;
   margin: 0;
+  @media screen and (min-width: $scr-des) {
+    font-size: 4rem;
+  }
 }
 
 h4 {
   font-size: 1.6rem;
   color: $clr-5;
+  @media screen and (min-width: $scr-des) {
+    font-size: 2rem;
+  }
 }
 
-p,
-ul,
-li {
+p {
   font-size: 1.6rem;
   color: $clr-5;
+  @media screen and (min-width: $scr-des){
+    font-size: 2rem;
+  }
 }
 
 .edge-margin {
@@ -48,5 +58,4 @@ li {
 .hide {
   display: none;
 }
-
 

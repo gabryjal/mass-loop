@@ -20,6 +20,11 @@ function imageCopy() {
     .pipe(dest('public/images'))
 }
 
+function jsCopy() {
+  return src('src/js/*')
+    .pipe(dest('public/js'))
+}
+
 function fontsCopy() {
   return src('src/fonts/*')
     .pipe(dest('public/fonts'))
@@ -33,7 +38,7 @@ function watch() {
   });
   gulp.watch('./src/scss/**/*.scss', style)
   gulp.watch('./public/*.html').on('change', browserSync.reload)
-  gulp.watch('./js/**/*.js').on('change', browserSync.reload)
+  gulp.watch('src/js/**/*.js', jsCopy).on('change', browserSync.reload)
   gulp.watch('src/images/*', imageCopy).on('change', browserSync.reload)
   gulp.watch('src/fonts/*', fontsCopy).on('change', browserSync.reload)
   // gulp.watch('src/index.html', indexCopy).on('change', browserSync.reload)

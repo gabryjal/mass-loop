@@ -1,6 +1,10 @@
 .product__title {
   text-align: center;
-  margin-top: 31px;
+  margin: 31px auto auto;
+  max-width: 1000px;
+  @media screen and (min-width: $scr-des){
+    margin: 65px auto auto;
+  }
 }
 
 .product__image-wrapper {
@@ -12,11 +16,16 @@
   height: 92.5vw;
   margin-top: 57px;
   margin-bottom: 15px;
-  max-height: 605px;
+  max-height: 579px;
+  @media screen and (min-width: $scr-des) {
+    margin-bottom: 20px;
+  }
 }
 
 .product__image {
+  z-index: -1;
   width: 142%;
+  max-width: 861px;
 }
 
 .product__shopping-bag {
@@ -31,6 +40,9 @@
   right: 0;
   width: 80px;
   height: 80px;
+  @media screen and (min-width: $scr-des){
+    display: none;
+  }
 }
 
 .product__description {
@@ -40,9 +52,25 @@
   padding: 52px 20px 58px 20px;
   width: calc(100vw - 40px);
   margin-left: -20px;
+
+  @media screen and (min-width: 768px) {
+    width: auto;
+    margin-left: 0;
+    padding: 58px 20px 66px 20px;
+  }
+}
+
+.product__description-title {
+  max-width: 763px;
+  margin: auto;
 }
 
 .product__description-content {
   line-height: 25px;
-  margin-top: 25px;
+  margin: 25px auto auto;
+  max-width: 711px;
+  @media screen and (min-width: $scr-des){
+    margin: 39px auto auto;
+    line-height: 32px;
+  }
 }

@@ -1,5 +1,15 @@
 .footer {
-  width: 293px;
+  width: 240px;
   text-align: center;
   margin: 0 auto 103px;
+  @media screen and (min-width: $scr-des) {
+    width: 446px;
+  }
+}
+
+.footer__content {
+  font-size: 2rem;
+  @media screen and (min-width: $scr-des){
+    font-size: 2.8rem;
+  }
 }

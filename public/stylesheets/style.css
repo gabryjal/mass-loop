@@ -142,7 +142,7 @@ p {
   height: 6px;
   background-repeat: no-repeat;
   display: inline-block;
-  background-image: url(../images/chevron.svg);
+  background-image: url(../images/header/chevron.svg);
   position: absolute;
   right: -18px;
   top: 22px;

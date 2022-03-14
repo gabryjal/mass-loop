@@ -8,28 +8,33 @@
 </head>
 <body>
 <header class="header">
-  <a href="./" class="header__logo">
-    <img class="header__logo-img" src="images/logo.svg" alt="logo">
-  </a>
-  <div class="header__lang-switcher">
-    <ul>
-      <li class="active">PL</li>
-      <li class="hide">EN</li>
-    </ul>
+  <div class="header__fixed">
+    <div class="header__content">
+      <a href="./" class="header__logo">
+        <img class="header__logo-img" src="images/logo.svg" alt="logo">
+      </a>
+      <div class="header__lang-switcher">
+        <ul>
+          <li class="active">PL</li>
+          <li class="hide">EN</li>
+        </ul>
+      </div>
+      <div class="header__menu">
+        <img class="header__menu-burger" src="images/menu-icon.svg" alt="menu icon">
+        <ul class="header__menu-items">
+          <li class="header__menu-item"><a href="./" class="header__menu-item-link">Policz zyski</a></li>
+          <li class="header__menu-item"><a href="./" class="header__menu-item-link">O produkcie</a></li>
+          <li class="header__menu-item"><a href="./" class="header__menu-item-link">Kontakt</a></li>
+          <li class="header__menu-item header__menu-item--last-desktop"><a href="./"
+                                                                           class="header__menu-item-link">FAQ</a></li>
+          <li class="header__menu-items--mobile header__menu-item">
+            <a href="./" class="button button--header">KUP</a>
+          </li>
+        </ul>
+      </div>
+      <a href="./" class="button button--header">kup</a>
+    </div>
   </div>
-  <div class="header__menu">
-    <img class="header__menu-burger" src="images/menu-icon.svg" alt="menu icon">
-    <ul class="header__menu-items">
-      <li class="header__menu-item"><a href="./" class="header__menu-item-link">Policz zyski</a></li>
-      <li class="header__menu-item"><a href="./" class="header__menu-item-link">O produkcie</a></li>
-      <li class="header__menu-item"><a href="./" class="header__menu-item-link">Kontakt</a></li>
-      <li class="header__menu-item header__menu-item--last-desktop"><a href="./" class="header__menu-item-link">FAQ</a></li>
-      <li class="header__menu-items--mobile header__menu-item">
-        <a href="./" class="button button--header">KUP</a>
-      </li>
-    </ul>
-  </div>
-  <a href="./" class="button button--header">kup</a>
 </header>
 <section class="product">
   <h2 class="product__title">Inteligentna kruszarka, która zamienia szkło w piasek.</h2>
@@ -52,15 +57,15 @@
   </div>
   <div class="calculator__value calculator__value--first">
     <h4 class="calculator__value-title">Ile pojemników na szkło zapełniasz miesięcznie?</h4>
-    <input class="calculator__value-input" type="number" placeholder="20">
+    <input id="calculator-input-first" class="calculator__value-input" type="number" placeholder="20">
   </div>
   <div class="calculator__value calculator__value--second">
     <h4 class="calculator__value-title">Ile płacisz za wywóz jednego pojemnika na szkło?</h4>
-    <input class="calculator__value-input" type="number" placeholder="20">
+    <input id="calculator-input-second" class="calculator__value-input" type="number" placeholder="20">
   </div>
   <div class="calculator__result">
     <h4 class="calculator__result-description-first">Dzięki kruszarce zaoszczędzisz</h4>
-    <h3 class="calculator__result-price">900 zł</h3>
+    <h3 class="calculator__result-price">3840 zł</h3>
     <h4 class="calculator__result-description-second">rocznie.</h4>
   </div>
   <p class="calculator__content-summary">To na co wydasz zaoszczędzoną gotówkę?</p>
@@ -71,5 +76,6 @@
 <footer class="footer">
   <h3 class="footer__content">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</h3>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>
